@@ -31,10 +31,5 @@ export async function GET(req: NextRequest) {
     });
   }
   
-  return NextResponse.redirect(
-    process.env.NODE_ENV === "development"
-      ? "http://localhost:3000/"
-      : "https://univusitea.vercel.app/"
-  );
-  /*return NextResponse.redirect("http://localhost:3000/")*/
+  return NextResponse.redirect("https://6538-m2-d2kncr4dv-jiaxins-projects-6f38c85d.vercel.app/")
 }
