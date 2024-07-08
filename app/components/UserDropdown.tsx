@@ -8,6 +8,7 @@ import {
   import { MenuIcon } from "lucide-react";
   import Link from "next/link";
   import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
+  import Image from "next/image";
   
   interface iAppProps {
     userImage: string | null;
@@ -20,7 +21,7 @@ import {
           <div className="rounded-full border px-2 py-2 lg:px-4 lg:py-2 flex items-center gap-x-3">
             <MenuIcon className="w-6 h-6 lg:w-5 lg:h-5" />
   
-            <img
+            <Image
               src={
                 userImage ??
                 "https://styles.redditmedia.com/t5_2rfcw/styles/communityIcon_8lmk08mvksbc1.png"

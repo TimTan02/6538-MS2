@@ -132,7 +132,7 @@ export default async function PostPage({ params }: { params: { id: string } }) {
               {data.Comment.map((item) => (
                 <div key={item.id} className="flex flex-col">
                   <div className="flex items-center gap-x-3">
-                    <img
+                    <Image
                       src={
                         item.User?.imageUrl
                           ? item.User.imageUrl
